@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" 
+   "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+   
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>Form Etiketleri</title>
+	</head>
+<body>
+	<form name="uyeKayit" id="uye-kayit-formu" method="post" action=""> <!--method post olursa girilen bilgi gizlenir, action da formun gönderileceği yeri gösterir-->
+	
+		<input type="text" name="adınız" value="" placeholder="Lütfen Adınızı Yazınız" maxlength="" size="" disabled="disabled"/> <!-- input giriş yapılacak yeri yapar,maxlength girilecek değerin max uzunluğunu belirtir, size formun boyutunu belirtir, disabled veri girişini engeller.  -->
+		
+	</form>
+	<form name="kayit-formu" id="kayit-formu" method="post" action="">
+	
+	<fieldset>
+	<legend>Üyelik Bilgileri</legend>
+		
+	<label for="adi">Adın:</label><input type="text" name="adi" id="adi" value="" /></br>
+	
+	<label for="soyadi">Soyadın:</label><input type="text" name="soyadi" id="soyadi" value="" /></br>
+	
+	<label for="parola">Parola:</label><input type="password" name="parola" id="parola" value="" /></br>
+	
+	<label for="parola-tekrar">Parola Tekrar:</label><input type="password" name="parola-tekrar" id="parola-tekrar" value="" />
+	
+	</fieldset>
+	
+	<input type="hidden" value="" /></br>
+	
+	<fieldset>
+	
+	<legend>Web Tasarımında Kullanılan Programlar</legend>
+	
+		<label for="photoshop">Photoshop</label><input type="checkbox" name="photoshop" id="photoshop" value="photoshop" checked="checked" /></br>
+		<label for="fireworks">fireworks</label><input type="checkbox" name="fireworks" id="fireworks" value="fireworks" checked="checked" /></br>
+	</fieldset>
+	
+	<fieldset>
+	<legend>Cinsiyetiniz</legend>
+		
+		<label>Kadın</label><input type="radio" name="cinsiyet" id="kadin" value="kadin" /></br>
+		<label>Erkek</label><input type="radio" name="cinsiyet" id="erkek" value="erkek" /></br>
+	</fieldset>
+	
+		<label for="mesaj">Mesajınız:</label>
+		<textarea name="mesaj" id="mesaj" columns="10" rows="10"></textarea></br>
+		<label for="yukle">Resim Yükle</label><input type="file" id="yukle" value=""/></br></br>
+		
+		<input type="submit" value="Mesajımı Gönder" />
+		<input type="reset" value="Gönderme" /></br>
+		Hangisini Kullanıyorsunuz </br>
+		<select name="select">
+			<option name="" value="" disabled="disabled" selected="selected" /> Bir Seçim Yapınız.. </option>
+			<optgroup label="Grup 0"> </optgroup>
+			<option name="" value="" /> HTML </option>
+			<option name="" value="" /> CSS </option>
+			<option name="" value="" /> JS </option>
+			<option name="" value="" /> JQuery </option>
+			<optgroup label="Grup 1"> </optgroup>
+			<option name="" value="" /> HTML </option>
+			<option name="" value="" /> CSS </option>
+			<option name="" value="" /> JS </option>
+			<option name="" value="" /> JQuery </option>
+			<optgroup label="Grup 2"> </optgroup>
+			<option name="" value="" /> HTML </option>
+			<option name="" value="" /> CSS </option>
+			<option name="" value="" /> JS </option>
+			<option name="" value="" /> JQuery </option>
+			<optgroup label="Grup 3"> </optgroup>
+			<option name="" value="" /> HTML </option>
+			<option name="" value="" /> CSS </option>
+			<option name="" value="" /> JS </option>
+			<option name="" value="" /> JQuery </option>
+	</form>
+</body>
+</html>

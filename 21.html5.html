@@ -1,0 +1,127 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>İlk Html5 </title>
+	<!--[if lt IE 9]>
+	<script src="js/html5shiv.js"></script>
+	<![endif]-->
+		<style type="text/css">
+			header{display:block;
+				background-color:red;
+				}
+		</style>
+	<link href="http://vjs.zencdn.net/6.6.3/video-js.css" rel="stylesheet">
+
+	<!-- If you'd like to support IE8 -->
+	<script src="http://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+</head>
+<body>
+	<header contenteditable="false">
+	ilk HTML5 etiketimiz
+		<h1> Buraya ilk başlık gelecek </h1>
+		<div>
+		Burası da düzenlenebilir
+		</div>
+	</header>
+	
+	<video width="" height="" controls="controls" loop="" poster="img/img.jpg" > <!--boyutları girmezsek varsayılan boyutları uygulanacak, poster videonun başlamadan önce gösterilen foto, autoplay-->
+		<source src="img/video.mp4" type="video/mp4" />
+	</video>
+	
+	<video id="my-video" class="video-js" controls preload="auto" width="" height=""
+		poster="img/img1.jpg" data-setup="{}">
+		<source src="img/video1.mp4" type='video/mp4'>
+		<p class="vjs-no-js">
+		To view this video please enable JavaScript, and consider upgrading to a web browser that
+		<a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+		</p>
+	</video>
+
+  <script src="http://vjs.zencdn.net/6.6.3/video.js"></script>
+	
+	<audio controls="controls" >
+		<source src="img/audio.mp3" type="audio/mp3" />
+	</audio>	
+	
+	<nav>
+		<ul>
+			<li><a href="">Anasayfa</a></li>
+		</ul>
+	</nav>
+	
+	<section>
+		<article><!-- makale yani yazı alanı-->
+			<hgroup>
+			<h1>Birinci Düzey Başlık</h1>
+			<h2>İkinci  Düzey Başlık</h2>
+			</hgroup>
+		</article>
+		
+		<article>
+			<details>
+				<summary>Burası Detay Başlık</summary>
+				<p>
+				Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+				</p>
+			</details>
+			<details>
+				<summary>Burası Detay Başlık 2</summary>
+				<p>
+				Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+				</p>
+			</details>
+			<details open>
+				<summary>Burası Detay Başlık 3</summary>
+				<p>
+				<mark>Lorem Ipsum</mark> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+				</p>
+			</details>
+		</article>
+		
+		<article>
+			<figure><!--buraya koyduğumuz içerik alt alta gelecek-->
+				<img src="img/img.jpg" />
+				<figcaption>Doğa resmi başlığı</figcaption>
+			</figure>
+		</article>
+		
+		<article>
+			<span>Değer: 90</span><meter value="90" min="0" max="100"></meter>
+			<span>Değer: 50</span><meter value="50" min="0" max="100"></meter>
+			<span>Değer: 30</span><meter value="30" min="0" max="100"></meter>
+			</br>
+			<progress value="20" max="120"> </progress>
+		</article>
+		
+		<article>
+		</article>
+	</section>
+	
+	<aside><!--sayfa içeriğinin haricindeki içerik-->
+		<section>
+			<h1>Üye Giriş Alanı</h1>
+		</section>
+		
+		<article>
+			<h1>Site Yapımı<time>15.03.2018</time></h1>
+			<h2>Html</h2>
+		</article>
+		
+		
+		
+	</aside>
+	
+	<footer>
+		<p>
+		Buraya bilgiler gelecek
+		</p>
+		<nav>
+		<ul>
+			<li><a href="">Alt Menu</a></li>
+		</ul>
+	</nav>
+	</footer>
+	
+</body>
+</html>
